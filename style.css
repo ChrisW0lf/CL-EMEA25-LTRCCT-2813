@@ -97,7 +97,7 @@ header {
 	margin: 0 auto;
 }
 
-#preOrder {
+.section-body {
   display: flex;
   width: 80%;
   margin: auto;
@@ -165,9 +165,11 @@ header {
   border-radius: 3px;
   border-width: 1px;
   border-color: #292929;
+  justify-content: center;
+  width: 99%;
 }
 
-#form-enter {
+.form-enter {
   display: inline-flex;
   text-decoration: none;
   color: white;
@@ -177,7 +179,7 @@ header {
   border-radius: 3px;
 }
 
-#form-enter:hover{
+.form-enter:hover{
   background-color: darkolivegreen;
 }
 
@@ -218,9 +220,11 @@ img {
 .column {
   flex: 65;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   padding: 10px;
+  flex-direction: column;
 }
 
 .column2 {
