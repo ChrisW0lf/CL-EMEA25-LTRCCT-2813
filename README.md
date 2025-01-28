@@ -6,7 +6,8 @@ Join us for an immersive session designed to equip you with the skills to create
 #
 In this repository you can find all the needed information to sucessfully complete the lab:
 
-- [website](https://github.com/ChrisW0lf/CL-EMEA25-LTRCCT-2813/tree/main/website): all needed files to sucessfully deploy your test website to implement Web Chats
+- [website](website): all files to sucessfully deploy your test website
+- [flows](flows): all flows for Webex Contact Center and Webex Connect
 #
 **Cisco Live!**\
 _Amsterdam | February 9-14, 2025_
