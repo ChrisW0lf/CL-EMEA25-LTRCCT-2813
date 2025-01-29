@@ -6,10 +6,13 @@ we describe here the already configured flows and their function
 The flows that start with Task are mandatory. They are used to handle a conversation with an agent.
 
 Task Routed.workflow
+
   The Routed Flow is always executed when an omnichannel conversation is accepted by an agent.
 Task Closed.workflow
+
   The Closed Flow is always executed when an omnichannel conversation is closed by an agent/customer.
 Task Modified.workflow
+
   The Modified Flow is always executed when an omnichannel conversation is changed / forwarded by an agent.
 #
 These Flows are optional.
