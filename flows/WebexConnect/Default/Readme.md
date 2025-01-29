@@ -1,4 +1,4 @@
-## Default / preconfifured Flow Explanation
+## Default / preconfigured Flow Explanation
 
 we describe here the already configured flows and their function
 
