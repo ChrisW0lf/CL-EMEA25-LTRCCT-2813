@@ -1,12 +1,13 @@
 $(document).ready(function () {
   
   
-  //Change the email below to the email you used for this lab, 'Podxx_user@webex-lab'
-  var xemail = "sebh@cisco.com";
+  
+  // ### Change the email below to the email you are using for this lab, e.g.'Podxx_user@webex-lab'
+  var xemail = "sebh@webex-lab.com";
+  
   
   
   $.ajax({
-
     url: 'https://api.airtable.com/v0/appZIsm4WdS7DZUEF/tblYOy9e3q82JEc6I/?filterByFormula=(customerEmail="' + xemail + '")',
     type: 'GET',
     contentType: "application/json",
@@ -19,23 +20,24 @@ $(document).ready(function () {
       var path = window.location.pathname;
       
       
-      // Here you can change the price in the variable below to the currency and amount you want
-      var price = '€649';
+      
+      // ### Here you can change the price in the variable below to the currency and amount you want
+      var price = '€849';
 
 
-      // You can change the name of the product in the variable below to a name of your choice
+      
+      // ### You can change the name of the product in the variable below to a name of your choice
       var productName = 'THE RIDGEWAY';
       
       
-      // ***No account details
+      
+      // ***b If no account details are returned the below JS will execute
       if (data.records[0] === undefined){
         console.log('no records');
         if (path.match("account.html")){
           var accountReturned = $('#accountReturned'); accountReturned.hide();
           var newAccount = $('#newAccount'); newAccount.show();
-          
           var createEnter = $('#create-enter');
-          
           createEnter.click(function (){
             var customerNameEnter = $('#customerName-enter');
             var xcustomerName = customerNameEnter.val();
@@ -43,17 +45,14 @@ $(document).ready(function () {
             var xcustomerEmail = customerEmailEnter.val();
             var mainTelEnter = $('#mainTel-enter');
             var xmainTel = mainTelEnter.val();
-
             var secondaryTelEnter = $('#secondaryTel-enter');
             var regex = /.*/ig;
             var matches = secondaryTelEnter.val().match(regex);
             if (matches.toString()){
             var xsecondaryTel = secondaryTelEnter.val();
             } else {xsecondaryTel = "null";}
-            
             var ccTelEnter = $('#ccTel-enter');
             var xccTel = ccTelEnter.val();
-
             $.ajax({
               url: 'https://hooks.eu.webexconnect.io/events/B6CD136ZWP',
               type: 'POST',
@@ -71,7 +70,6 @@ $(document).ready(function () {
             .done(function (data) {
               console.log('success - create request')
             });
-            
             var nameDisplay1 = document.getElementsByClassName("customerName")[1];
             nameDisplay1.innerText = xcustomerName;
             var route = document.getElementById("route");
@@ -79,7 +77,6 @@ $(document).ready(function () {
             var completeMessage = $('#complete-message'); completeMessage.show();
             var before = $('#before'); before.hide();
           });
-          
         } else{
           var priceDisplay = document.getElementsByClassName("price")[0];
           priceDisplay.innerText = price;
@@ -90,11 +87,11 @@ $(document).ready(function () {
           var productId = "bb567923"
         } 
       }
-      // ***An account returned
+      // *** If an account is returned the below JS will execute
       else {
         console.log(data);
         console.log('Record for ' + data.records[0].fields.customerName  + ' retrieved')
-        //***account web page with account data
+        //*** If the web page loaded is /account.html with returned account data
         if (path.match("account.html")){
           var nameDisplay = document.getElementsByClassName("customerName")[0];
           nameDisplay.innerText = data.records[0].fields.customerName;
@@ -110,9 +107,7 @@ $(document).ready(function () {
           ccTel.innerText = data.records[0].fields.ccTel;
           var accountReturned = $('#accountReturned'); accountReturned.show();
           var newAccount = $('#newAccount'); newAccount.hide();
-          
           var deleteEnter = $('#delete-enter');
-          
           deleteEnter.click(function (){
             $.ajax({
               url: 'https://hooks.eu.webexconnect.io/events/B6CD136ZWP',
@@ -133,12 +128,12 @@ $(document).ready(function () {
             var before = $('#before'); before.hide();
           });
         } 
-        //***return page
+        //*** If the web page loaded is /return.html with returned account data
         else if (path.match("return.html")){
           var nameDisplay = document.getElementById("customerName");
           nameDisplay.innerText = data.records[0].fields.customerName;
         }
-        //***index page
+        //*** If the web page loaded is / (index.html or 'the homepage') with returned account data
         else{
           var priceDisplay = document.getElementsByClassName("price")[1];
           priceDisplay.innerText = price;
@@ -148,30 +143,12 @@ $(document).ready(function () {
           var before = $('#before'); before.show();
           var productId = "bb567923"
           var formEnter = $('#form-enter');
-
+          // *** Order is created with below JS function
           formEnter.click(function (){
-
-
-            //var numberEnter = $('#tel-enter');
-            //var regex = /.*/ig;
-            //var matches = numberEnter.val().match(regex);
-            //if (matches.toString()){
-            //var xnumber = numberEnter.val();
-            //}
-
-
             var orderVal = 'better' + Math.floor((Math.random() * 100) + 10) + Math.floor((Math.random() * 100) + 10);
             $('.orderId').text(orderVal);
-
             $.ajax({
-
-
-
-              //Change the webhook in the field below 'url' to your webhook from Webex Connect
               url: 'https://hooks.eu.webexconnect.io/events/0ENCVEP56Y',
-
-
-
               type: 'POST',
               contentType: "application/json",
               dataType: "json",
