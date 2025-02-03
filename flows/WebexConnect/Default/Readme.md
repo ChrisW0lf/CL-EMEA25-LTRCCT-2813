@@ -15,10 +15,16 @@ The Routed Flow is always executed when an omnichannel conversation is accepted 
 ## Task Closed.workflow
 
 The Closed Flow is always executed when an omnichannel conversation is closed by an agent/customer.
+
+<img width="1724" alt="image" src="https://github.com/user-attachments/assets/26cb3c74-3823-4843-ac93-b5fe60a1b400" />
+
   
 ## Task Modified.workflow
 
   The Modified Flow is always executed when an omnichannel conversation is changed / forwarded by an agent.
+
+  <img width="1007" alt="image" src="https://github.com/user-attachments/assets/b0e4cba8-f799-4bf3-bd82-4fe82410268a" />
+
 #
 These Flows are optional.
 
