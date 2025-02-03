@@ -16,6 +16,8 @@ The Routed Flow is always executed when an omnichannel conversation is accepted 
 
 The Closed Flow is always executed when an omnichannel conversation is closed by an agent/customer.
 
+You can see in this flow that you can perform additional actions/functions in all three flows. In this case, the complete transcript of the conversation is loaded and stored in JDS as a summary.
+
 <img width="1724" alt="image" src="https://github.com/user-attachments/assets/26cb3c74-3823-4843-ac93-b5fe60a1b400" />
 
   
