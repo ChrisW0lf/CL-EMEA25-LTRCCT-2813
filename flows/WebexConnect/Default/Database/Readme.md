@@ -44,3 +44,14 @@ Here is an example for JDS injecting.
 
 ## cancel order
 
+For order cancelation the flow Website Order Cancelation is executed.
+
+<img width="1127" alt="image" src="https://github.com/user-attachments/assets/364c742f-0604-4f5e-8b91-0a55fdbd2362" />
+
+In these flow you can see that we use a custom Node for Airtable. When you are often use the same HTTP Requests then it makes sense to create a customer node.
+Then use can use these node in every flow. Here is an example of custom node.
+
+<img width="1400" alt="image" src="https://github.com/user-attachments/assets/3721e7d3-501a-4f9e-9b94-37e888567ed0" />
+
+
+
