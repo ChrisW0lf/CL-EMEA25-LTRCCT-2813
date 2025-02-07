@@ -1,0 +1,1220 @@
+{
+	"entities": [
+		{
+			"color": "#f42187",
+			"data": {
+				"values": [
+					{
+						"synonyms": [
+							"tire repair kit",
+							"tire puncture kit",
+							"repair kit",
+							"puncture kit",
+							"tire kit",
+							"Bike tire puncture kit"
+						],
+						"value": "Tire Kit"
+					},
+					{
+						"synonyms": [
+							"Apex",
+							"Apex Pro™"
+						],
+						"value": "Apex Pro"
+					},
+					{
+						"synonyms": [
+							"Trailblazer™"
+						],
+						"value": "Trailblazer"
+					},
+					{
+						"synonyms": [
+							"Journey™"
+						],
+						"value": "Journey"
+					},
+					{
+						"synonyms": [],
+						"value": "Return"
+					}
+				]
+			},
+			"name": "product_choice",
+			"system_entity": false,
+			"type": "custom",
+			"roles": [],
+			"auto_complete": false
+		}
+	],
+	"intents": [
+		{
+			"intent_id": "good_bye",
+			"name": "Goodbye",
+			"entities": [],
+			"template_key": "Goodbye",
+			"reset_state": true,
+			"end_conversation": false,
+			"exit_context": [],
+			"entry_context": [],
+			"auto_complete_entities": false,
+			"variants": {
+				"en": {
+					"utterances": [
+						{
+							"entities": [],
+							"utterance": "Goodbye"
+						},
+						{
+							"entities": [],
+							"utterance": "Adieu"
+						},
+						{
+							"entities": [],
+							"utterance": "Adios"
+						},
+						{
+							"entities": [],
+							"utterance": "Bye"
+						},
+						{
+							"entities": [],
+							"utterance": "Good bye"
+						},
+						{
+							"entities": [],
+							"utterance": "Catch you later"
+						},
+						{
+							"entities": [],
+							"utterance": "G2G"
+						},
+						{
+							"entities": [],
+							"utterance": "Ciao"
+						},
+						{
+							"entities": [],
+							"utterance": "CYA"
+						},
+						{
+							"entities": [],
+							"utterance": "C-ya"
+						},
+						{
+							"entities": [],
+							"utterance": "Fare thee well"
+						},
+						{
+							"entities": [],
+							"utterance": "Catch ya later"
+						},
+						{
+							"entities": [],
+							"utterance": "gotta go"
+						},
+						{
+							"entities": [],
+							"utterance": "See you later"
+						},
+						{
+							"entities": [],
+							"utterance": "See ya later"
+						},
+						{
+							"entities": [],
+							"generated": false,
+							"utterance": "Thanks bye"
+						},
+						{
+							"entities": [],
+							"generated": false,
+							"utterance": "Thanks goodbye"
+						}
+					]
+				}
+			}
+		},
+		{
+			"intent_id": "help",
+			"name": "Help",
+			"entities": [],
+			"template_key": "Fallback message",
+			"reset_state": true,
+			"end_conversation": false,
+			"exit_context": [],
+			"entry_context": [],
+			"auto_complete_entities": false,
+			"variants": {
+				"en": {
+					"utterances": [
+						{
+							"entities": [],
+							"utterance": "What can you do?"
+						},
+						{
+							"entities": [],
+							"utterance": "How can you help?"
+						},
+						{
+							"entities": [],
+							"utterance": "Help"
+						},
+						{
+							"entities": [],
+							"utterance": "What do you do?"
+						},
+						{
+							"entities": [],
+							"utterance": "Could you please help me"
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "9d56a8730d2545bc8e5b783c90b7d79c",
+							"utterance": "\"Can you explain what Better Bikes offers?\","
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "9d56a8730d2545bc8e5b783c90b7d79c",
+							"utterance": "\"I'm curious about the services provided by Better Bikes.\","
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "9d56a8730d2545bc8e5b783c90b7d79c",
+							"utterance": "\"What kind of assistance does Better Bikes provide?\","
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "9d56a8730d2545bc8e5b783c90b7d79c",
+							"utterance": "\"Tell me more about what Better Bikes is all about.\","
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "9d56a8730d2545bc8e5b783c90b7d79c",
+							"utterance": "\"What can I expect from Better Bikes in terms of services?\""
+						},
+						{
+							"entities": [],
+							"generated": false,
+							"utterance": "What does better bikes do"
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "93e18601a3d54af8b51189cf3b10148d",
+							"utterance": "\"Can you tell me what Better Bikes is all about?\""
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "93e18601a3d54af8b51189cf3b10148d",
+							"utterance": "\"I'm interested in learning more about the services Better Bikes provides.\""
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "94af5c97577e46d98d8d608792951998",
+							"utterance": "\"Could you provide me with some information about Better Bikes?\""
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "94af5c97577e46d98d8d608792951998",
+							"utterance": "\"I'm curious to learn more about what Better Bikes offers.\""
+						},
+						{
+							"entities": [],
+							"generated": false,
+							"utterance": "Can you tell me about"
+						}
+					]
+				}
+			}
+		},
+		{
+			"intent_id": "2",
+			"name": "Purchase product",
+			"entities": [
+				{
+					"counter": 3,
+					"required": true,
+					"template_key": "product_choice",
+					"entity_name": "product_choice"
+				}
+			],
+			"template_key": "purchase",
+			"reset_state": true,
+			"end_conversation": false,
+			"exit_context": [],
+			"entry_context": [],
+			"auto_complete_entities": false,
+			"variants": {
+				"en": {
+					"utterances": [
+						{
+							"entities": [],
+							"generated": false,
+							"utterance": "I would like to add that to my order"
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "ea55e362fc684e0d9ea655bb34445cfb",
+							"utterance": "\"Please make sure to add that to my order.\""
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "ea55e362fc684e0d9ea655bb34445cfb",
+							"utterance": "\"Could you attach that to my order, please?\""
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "ea55e362fc684e0d9ea655bb34445cfb",
+							"utterance": "\"I want to include that in my order, if possible.\""
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "ea55e362fc684e0d9ea655bb34445cfb",
+							"utterance": "\"Add that item to my order, please.\""
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "56c056828b81435aae7bdc0929703d07",
+							"utterance": "\"I’m interested in buying this; what’s the next step?\""
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "56c056828b81435aae7bdc0929703d07",
+							"utterance": "\"How do I go about purchasing one?\""
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "56c056828b81435aae7bdc0929703d07",
+							"utterance": "\"What do I need to do to buy this item?\""
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "56c056828b81435aae7bdc0929703d07",
+							"utterance": "\"Could you help me with the steps to order one?\""
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "56c056828b81435aae7bdc0929703d07",
+							"utterance": "\"I’d like to buy this; what should I do?\""
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "204a56e52f654b66a0fc010daa719d09",
+							"utterance": "\"What do I need to do to make a purchase?\""
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "204a56e52f654b66a0fc010daa719d09",
+							"utterance": "\"I'm interested in buying one; how do I go about it?\""
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "204a56e52f654b66a0fc010daa719d09",
+							"utterance": "\"Please tell me how I can place an order for this item.\""
+						},
+						{
+							"entities": [],
+							"generated": false,
+							"utterance": "OK, where can I can buy this?"
+						},
+						{
+							"entities": [],
+							"generated": false,
+							"utterance": "OK, how do I order one?"
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "7b072f97f4534596b251dd5d47b5339a",
+							"utterance": "\"That looks perfect, how can I go about purchasing it?\""
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "7b072f97f4534596b251dd5d47b5339a",
+							"utterance": "\"I'm interested in this item; please guide me on how to proceed with the purchase.\""
+						},
+						{
+							"entities": [],
+							"generated": false,
+							"utterance": "Great, I'd like to buy one"
+						}
+					]
+				}
+			}
+		},
+		{
+			"intent_id": "agent",
+			"name": "Talk to an agent",
+			"entities": [],
+			"template_key": "Agent handover",
+			"reset_state": true,
+			"end_conversation": false,
+			"exit_context": [],
+			"entry_context": [],
+			"variants": {
+				"en": {
+					"utterances": [
+						{
+							"entities": [],
+							"utterance": "Can I talk to a human?"
+						},
+						{
+							"entities": [],
+							"utterance": "agent"
+						},
+						{
+							"entities": [],
+							"utterance": "human"
+						},
+						{
+							"entities": [],
+							"utterance": "Connect me to a human"
+						},
+						{
+							"entities": [],
+							"utterance": "Chat with agent"
+						},
+						{
+							"entities": [],
+							"utterance": "Can I speak with someone?"
+						}
+					]
+				}
+			}
+		},
+		{
+			"intent_id": "thank_you",
+			"name": "Thank you",
+			"entities": [],
+			"template_key": "Thank you",
+			"reset_state": true,
+			"end_conversation": false,
+			"exit_context": [],
+			"entry_context": [],
+			"variants": {
+				"en": {
+					"utterances": [
+						{
+							"entities": [],
+							"utterance": "Thank you"
+						},
+						{
+							"entities": [],
+							"utterance": "Many thanks"
+						},
+						{
+							"entities": [],
+							"utterance": "Kthx"
+						},
+						{
+							"entities": [],
+							"utterance": "I appreciate that"
+						},
+						{
+							"entities": [],
+							"utterance": "Thx"
+						},
+						{
+							"entities": [],
+							"utterance": "Thnx"
+						},
+						{
+							"entities": [],
+							"utterance": "Thanks bot"
+						},
+						{
+							"entities": [],
+							"utterance": "Thanks a lot"
+						},
+						{
+							"entities": [],
+							"utterance": "Thank you"
+						},
+						{
+							"entities": [],
+							"utterance": "Thanks"
+						}
+					]
+				}
+			}
+		},
+		{
+			"intent_id": "not_helpful",
+			"name": "Not helpful",
+			"entities": [],
+			"template_key": "Not helpful",
+			"reset_state": true,
+			"end_conversation": false,
+			"exit_context": [],
+			"entry_context": [],
+			"variants": {
+				"en": {
+					"utterances": [
+						{
+							"entities": [],
+							"utterance": "That was unhelpful"
+						},
+						{
+							"entities": [],
+							"utterance": "That's inaccurate"
+						},
+						{
+							"entities": [],
+							"utterance": "That was a terrible answer"
+						},
+						{
+							"entities": [],
+							"utterance": "That wasn't True"
+						},
+						{
+							"entities": [],
+							"utterance": "Not what I asked"
+						},
+						{
+							"entities": [],
+							"utterance": "That's not a good answer"
+						},
+						{
+							"entities": [],
+							"utterance": "That's not relevant"
+						},
+						{
+							"entities": [],
+							"utterance": "Not True"
+						},
+						{
+							"entities": [],
+							"utterance": "Not even close"
+						},
+						{
+							"entities": [],
+							"utterance": "That was a stupid answer"
+						},
+						{
+							"entities": [],
+							"utterance": "Inaccurate"
+						},
+						{
+							"entities": [],
+							"utterance": "False"
+						},
+						{
+							"entities": [],
+							"utterance": "That's wrong"
+						},
+						{
+							"entities": [],
+							"utterance": "Answers are not very good"
+						},
+						{
+							"entities": [],
+							"utterance": "Answers are irrelevant"
+						},
+						{
+							"entities": [],
+							"utterance": "Responses aren't relevant"
+						},
+						{
+							"entities": [],
+							"utterance": "Responses are unTrue"
+						},
+						{
+							"entities": [],
+							"utterance": "Responses are dumb"
+						},
+						{
+							"entities": [],
+							"utterance": "Responses are stupid"
+						},
+						{
+							"entities": [],
+							"utterance": "Didn't answer my question"
+						},
+						{
+							"entities": [],
+							"utterance": "Wrong answer"
+						},
+						{
+							"entities": [],
+							"utterance": "Explain yourself"
+						},
+						{
+							"entities": [],
+							"utterance": "I'm confused"
+						},
+						{
+							"entities": [],
+							"utterance": "I don't understand"
+						},
+						{
+							"entities": [],
+							"utterance": "I don't get it"
+						},
+						{
+							"entities": [],
+							"utterance": "That made no sense"
+						},
+						{
+							"entities": [],
+							"utterance": "That didn't make sense"
+						},
+						{
+							"entities": [],
+							"utterance": "You are confusing me"
+						}
+					]
+				}
+			}
+		},
+		{
+			"intent_id": "greetings",
+			"name": "Greetings",
+			"entities": [],
+			"template_key": "Greetings",
+			"reset_state": true,
+			"end_conversation": false,
+			"exit_context": [],
+			"entry_context": [],
+			"variants": {
+				"en": {
+					"utterances": [
+						{
+							"entities": [],
+							"utterance": "Hello"
+						},
+						{
+							"entities": [],
+							"utterance": "Hello there"
+						},
+						{
+							"entities": [],
+							"utterance": "Ahoy"
+						},
+						{
+							"entities": [],
+							"utterance": "Hey pal"
+						},
+						{
+							"entities": [],
+							"utterance": "Greetings and salutations"
+						},
+						{
+							"entities": [],
+							"utterance": "G'day"
+						},
+						{
+							"entities": [],
+							"utterance": "Good day"
+						},
+						{
+							"entities": [],
+							"utterance": "Heya"
+						},
+						{
+							"entities": [],
+							"utterance": "Well hey there"
+						},
+						{
+							"entities": [],
+							"utterance": "Yo dude"
+						},
+						{
+							"entities": [],
+							"utterance": "Hey-hey"
+						},
+						{
+							"entities": [],
+							"utterance": "Hi"
+						},
+						{
+							"entities": [],
+							"utterance": "Hi there!"
+						},
+						{
+							"entities": [],
+							"utterance": "Hiya"
+						},
+						{
+							"entities": [],
+							"utterance": "Howdy"
+						},
+						{
+							"entities": [],
+							"utterance": "evenin"
+						},
+						{
+							"entities": [],
+							"utterance": "Good evening"
+						},
+						{
+							"entities": [],
+							"utterance": "Good morning sunshine"
+						},
+						{
+							"entities": [],
+							"utterance": "Mornin'"
+						},
+						{
+							"entities": [],
+							"utterance": "Good morning"
+						},
+						{
+							"entities": [],
+							"utterance": "Good night"
+						},
+						{
+							"entities": [],
+							"utterance": "G'night"
+						},
+						{
+							"entities": [],
+							"utterance": "Sweet dreams"
+						},
+						{
+							"entities": [],
+							"utterance": "Nighty night"
+						}
+					]
+				}
+			}
+		},
+		{
+			"intent_id": "none",
+			"name": "Default fallback intent",
+			"entities": [],
+			"template_key": "Fallback message",
+			"reset_state": true,
+			"end_conversation": false,
+			"exit_context": [],
+			"entry_context": [],
+			"auto_complete_entities": false,
+			"variants": {
+				"en": {
+					"utterances": []
+				}
+			}
+		}
+	],
+	"responses": {
+		"Agent handover": {
+			"variants": {
+				"en": {
+					"logic": "",
+					"paths": {
+						"configurable": [],
+						"default": {
+							"actions": {
+								"web": [
+									{
+										"text": [
+											"Please wait while I connect you to a customer service representative."
+										],
+										"type": "response"
+									}
+								]
+							}
+						}
+					},
+					"response_type": "paths",
+					"send_response_in_default_language": false
+				}
+			}
+		},
+		"Entity suggestion": {
+			"variants": {
+				"en": {
+					"logic": "",
+					"paths": {
+						"configurable": [],
+						"default": {
+							"actions": {
+								"web": [
+									{
+										"text": [
+											"Choose one of the following or provide your own"
+										],
+										"type": "response"
+									}
+								]
+							}
+						}
+					},
+					"response_type": "paths",
+					"send_response_in_default_language": false
+				}
+			}
+		},
+		"Fallback message": {
+			"variants": {
+				"en": {
+					"logic": "",
+					"paths": {
+						"configurable": [],
+						"default": {
+							"actions": {
+								"web": [
+									{
+										"text": [
+											"fallback_message"
+										],
+										"type": "response"
+									}
+								]
+							}
+						}
+					},
+					"response_type": "paths",
+					"send_response_in_default_language": false
+				}
+			}
+		},
+		"Goodbye": {
+			"variants": {
+				"en": {
+					"logic": "",
+					"paths": {
+						"configurable": [],
+						"default": {
+							"actions": {
+								"web": [
+									{
+										"text": [
+											"Goodbye and take care!"
+										],
+										"type": "response"
+									}
+								]
+							}
+						}
+					},
+					"response_type": "paths",
+					"send_response_in_default_language": false
+				}
+			}
+		},
+		"Greetings": {
+			"variants": {
+				"en": {
+					"logic": "",
+					"paths": {
+						"configurable": [],
+						"default": {
+							"actions": {
+								"web": [
+									{
+										"text": [
+											"Hi 🖐️, I'm the bikebot. I'm here to help you with all things Better Bikes. How can I assist you?"
+										],
+										"type": "response"
+									}
+								]
+							}
+						}
+					},
+					"response_type": "paths",
+					"send_response_in_default_language": false
+				}
+			}
+		},
+		"Help message": {
+			"variants": {
+				"en": {
+					"logic": "",
+					"paths": {
+						"configurable": [],
+						"default": {
+							"actions": {
+								"web": [
+									{
+										"text": [
+											"fallback_message"
+										],
+										"type": "response"
+									}
+								]
+							}
+						}
+					},
+					"response_type": "paths",
+					"send_response_in_default_language": false
+				}
+			}
+		},
+		"Not helpful": {
+			"variants": {
+				"en": {
+					"logic": "",
+					"paths": {
+						"configurable": [],
+						"default": {
+							"actions": {
+								"web": [
+									{
+										"text": [
+											"Sorry,  I hear that wasn't able to help you. Please try asking a different question."
+										],
+										"type": "response"
+									}
+								]
+							}
+						}
+					},
+					"response_type": "paths",
+					"send_response_in_default_language": false
+				}
+			}
+		},
+		"Partial match": {
+			"variants": {
+				"en": {
+					"logic": "",
+					"paths": {
+						"configurable": [],
+						"default": {
+							"actions": {
+								"web": [
+									{
+										"text": [
+											"Sorry, I was unable to understand your query accurately. Could you select which intent you were referring to?"
+										],
+										"type": "response"
+									}
+								]
+							}
+						}
+					},
+					"response_type": "paths",
+					"send_response_in_default_language": false
+				}
+			}
+		},
+		"Response suggestion": {
+			"variants": {
+				"en": {
+					"logic": "",
+					"paths": {
+						"configurable": [],
+						"default": {
+							"actions": {
+								"web": [
+									{
+										"text": [
+											"You can also see the results for"
+										],
+										"type": "response"
+									}
+								]
+							}
+						}
+					},
+					"response_type": "paths",
+					"send_response_in_default_language": false
+				}
+			}
+		},
+		"Thank you": {
+			"variants": {
+				"en": {
+					"logic": "",
+					"paths": {
+						"configurable": [],
+						"default": {
+							"actions": {
+								"web": [
+									{
+										"text": [
+											"You're welcome, take care!"
+										],
+										"type": "response"
+									}
+								]
+							}
+						}
+					},
+					"response_type": "paths",
+					"send_response_in_default_language": false
+				}
+			}
+		},
+		"Welcome message": {
+			"variants": {
+				"en": {
+					"logic": "",
+					"paths": {
+						"configurable": [],
+						"default": {
+							"actions": {
+								"web": [
+									{
+										"text": [
+											"Hi 🖐️, I'm the bikebot. I'm here to help you with all things Better Bikes. How can I assist you?"
+										],
+										"type": "response"
+									}
+								]
+							}
+						}
+					},
+					"response_type": "paths",
+					"send_response_in_default_language": false
+				}
+			}
+		},
+		"product_choice": {
+			"variants": {
+				"en": {
+					"logic": "",
+					"paths": {
+						"configurable": [],
+						"default": {
+							"actions": {
+								"web": [
+									{
+										"text": [
+											"Please take a look and select a product from one of the options below:"
+										],
+										"type": "response"
+									},
+									{
+										"generic_template": [
+											{
+												"elements": [
+													{
+														"button": [
+															{
+																"payload": "Tire Kit",
+																"title": "Tire Kit",
+																"type": "postback"
+															}
+														],
+														"description": "€22",
+														"image_url": "https://i.imgur.com/jbWjzAC.png",
+														"title": "Bike tire puncture repair kit"
+													},
+													{
+														"button": [
+															{
+																"payload": "Apex Pro",
+																"title": "Apex Pro",
+																"type": "postback"
+															}
+														],
+														"description": "€180",
+														"image_url": "https://i.imgur.com/4q7zqRf.jpg",
+														"title": "Apex Pro™"
+													},
+													{
+														"button": [
+															{
+																"payload": "Trailblazer",
+																"title": "Trailblazer",
+																"type": "postback"
+															}
+														],
+														"description": "€70",
+														"image_url": "https://i.imgur.com/RmVqQF4.jpg",
+														"title": "Trailblazer™"
+													},
+													{
+														"button": [
+															{
+																"payload": "Journey",
+																"title": "Journey",
+																"type": "postback"
+															}
+														],
+														"description": "€38",
+														"image_url": "https://i.imgur.com/I8sq5HX.jpg",
+														"title": "Journey™"
+													},
+													{
+														"button": [
+															{
+																"payload": "Return",
+																"title": "Return",
+																"type": "postback"
+															}
+														],
+														"description": "Exit the options and if you need any further assistance, please ask",
+														"image_url": "https://i.imgur.com/gvxJ1Ck.jpg",
+														"title": "Exit menu"
+													}
+												]
+											}
+										],
+										"type": "response"
+									}
+								]
+							}
+						}
+					},
+					"response_type": "paths",
+					"send_response_in_default_language": false
+				}
+			}
+		},
+		"purchase": {
+			"variants": {
+				"en": {
+					"logic": "",
+					"paths": {
+						"configurable": [
+							{
+								"actions": {
+									"web": [
+										{
+											"text": [
+												"Thanks for choosing the ${newdfState.model_state.entities.product_choice.value}. Your account has been debited €22 and we've sent you an email confirmation. Can I help with anything else?"
+											],
+											"type": "response"
+										}
+									]
+								},
+								"condition": {
+									"and": [
+										{
+											"or": [
+												{
+													"===": [
+														{
+															"var": "newdfState.model_state.entities.product_choice.value"
+														},
+														"Tire Kit"
+													]
+												}
+											]
+										}
+									]
+								},
+								"name": "Tire Kit"
+							},
+							{
+								"actions": {
+									"web": [
+										{
+											"text": [
+												"Thanks for choosing the ${newdfState.model_state.entities.product_choice.value}. Your account has been debited €180 and we've sent you an email confirmation. Can I help with anything else?"
+											],
+											"type": "response"
+										}
+									]
+								},
+								"condition": {
+									"and": [
+										{
+											"or": [
+												{
+													"===": [
+														{
+															"var": "newdfState.model_state.entities.product_choice.value"
+														},
+														"Apex Pro"
+													]
+												}
+											]
+										}
+									]
+								},
+								"name": "Apex Pro"
+							},
+							{
+								"actions": {
+									"web": [
+										{
+											"text": [
+												"Thanks for choosing the ${newdfState.model_state.entities.product_choice.value}. Your account has been debited €70 and we've sent you an email confirmation. Can I help with anything else?"
+											],
+											"type": "response"
+										}
+									]
+								},
+								"condition": {
+									"and": [
+										{
+											"or": [
+												{
+													"===": [
+														{
+															"var": "newdfState.model_state.entities.product_choice.value"
+														},
+														"Trailblazer"
+													]
+												}
+											]
+										}
+									]
+								},
+								"name": "Trailblazer"
+							},
+							{
+								"actions": {
+									"web": [
+										{
+											"text": [
+												"Thanks for choosing the ${newdfState.model_state.entities.product_choice.value}. Your account has been debited €38 and we've sent you an email confirmation. Can I help with anything else?"
+											],
+											"type": "response"
+										}
+									]
+								},
+								"condition": {
+									"and": [
+										{
+											"or": [
+												{
+													"===": [
+														{
+															"var": "newdfState.model_state.entities.product_choice.value"
+														},
+														"Journey"
+													]
+												}
+											]
+										}
+									]
+								},
+								"name": "Journey"
+							}
+						],
+						"default": {
+							"actions": {
+								"web": [
+									{
+										"text": [
+											"No problem, ask me another question."
+										],
+										"type": "response"
+									}
+								]
+							}
+						}
+					},
+					"response_type": "paths",
+					"send_response_in_default_language": false
+				}
+			}
+		}
+	}
+}
