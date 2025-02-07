@@ -1,6 +1,6 @@
 
 # Instructions
 
-Here you can find all necessary flows and there functions.
+Here you can find all necessary flows, bot corpora and their functions.
 
 
