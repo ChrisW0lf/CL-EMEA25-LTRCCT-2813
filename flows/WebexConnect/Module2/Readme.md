@@ -1,3 +1,4 @@
+## Module 2 - Web Chat
 
 [LTRCCT-2813](https://www.ciscolive.com/emea/learn/session-catalog.html?search=Mastering%20Demo-Driven%20Customer%20Journeys%20with%20Webex%20Customer%20Experience#/)
 #
