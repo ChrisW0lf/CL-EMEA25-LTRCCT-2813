@@ -1,6 +1,4 @@
 
 # Instructions
 
-Here you can find all necessary flows, bot corpora and their functions.
-
-
+Here you can find all necessary flows, a bot corpus and a .js file
