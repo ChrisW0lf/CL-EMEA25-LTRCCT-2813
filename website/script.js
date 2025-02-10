@@ -1,7 +1,6 @@
 $(document).ready(function () {
   
   
-  
   // ### Change the email below to the email you are using for this lab, e.g.'Podxx_user@webex-lab'
   var xemail = "sebh@webex-lab.com";
   
