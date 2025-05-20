@@ -49,7 +49,7 @@
 	],
 	"intents": [
 		{
-			"intent_id": "good_bye",
+			"intent_id": "1",
 			"name": "Goodbye",
 			"entities": [],
 			"template_key": "Goodbye",
@@ -59,7 +59,7 @@
 			"entry_context": [],
 			"auto_complete_entities": false,
 			"variants": {
-				"en": {
+				"en-US": {
 					"utterances": [
 						{
 							"entities": [],
@@ -136,107 +136,6 @@
 			}
 		},
 		{
-			"intent_id": "help",
-			"name": "Help",
-			"entities": [],
-			"template_key": "Fallback message",
-			"reset_state": true,
-			"end_conversation": false,
-			"exit_context": [],
-			"entry_context": [],
-			"auto_complete_entities": false,
-			"variants": {
-				"en": {
-					"utterances": [
-						{
-							"entities": [],
-							"utterance": "What can you do?"
-						},
-						{
-							"entities": [],
-							"utterance": "How can you help?"
-						},
-						{
-							"entities": [],
-							"utterance": "Help"
-						},
-						{
-							"entities": [],
-							"utterance": "What do you do?"
-						},
-						{
-							"entities": [],
-							"utterance": "Could you please help me"
-						},
-						{
-							"entities": [],
-							"generated": true,
-							"transaction_id": "9d56a8730d2545bc8e5b783c90b7d79c",
-							"utterance": "\"Can you explain what Better Bikes offers?\","
-						},
-						{
-							"entities": [],
-							"generated": true,
-							"transaction_id": "9d56a8730d2545bc8e5b783c90b7d79c",
-							"utterance": "\"I'm curious about the services provided by Better Bikes.\","
-						},
-						{
-							"entities": [],
-							"generated": true,
-							"transaction_id": "9d56a8730d2545bc8e5b783c90b7d79c",
-							"utterance": "\"What kind of assistance does Better Bikes provide?\","
-						},
-						{
-							"entities": [],
-							"generated": true,
-							"transaction_id": "9d56a8730d2545bc8e5b783c90b7d79c",
-							"utterance": "\"Tell me more about what Better Bikes is all about.\","
-						},
-						{
-							"entities": [],
-							"generated": true,
-							"transaction_id": "9d56a8730d2545bc8e5b783c90b7d79c",
-							"utterance": "\"What can I expect from Better Bikes in terms of services?\""
-						},
-						{
-							"entities": [],
-							"generated": false,
-							"utterance": "What does better bikes do"
-						},
-						{
-							"entities": [],
-							"generated": true,
-							"transaction_id": "93e18601a3d54af8b51189cf3b10148d",
-							"utterance": "\"Can you tell me what Better Bikes is all about?\""
-						},
-						{
-							"entities": [],
-							"generated": true,
-							"transaction_id": "93e18601a3d54af8b51189cf3b10148d",
-							"utterance": "\"I'm interested in learning more about the services Better Bikes provides.\""
-						},
-						{
-							"entities": [],
-							"generated": true,
-							"transaction_id": "94af5c97577e46d98d8d608792951998",
-							"utterance": "\"Could you provide me with some information about Better Bikes?\""
-						},
-						{
-							"entities": [],
-							"generated": true,
-							"transaction_id": "94af5c97577e46d98d8d608792951998",
-							"utterance": "\"I'm curious to learn more about what Better Bikes offers.\""
-						},
-						{
-							"entities": [],
-							"generated": false,
-							"utterance": "Can you tell me about"
-						}
-					]
-				}
-			}
-		},
-		{
 			"intent_id": "2",
 			"name": "Purchase product",
 			"entities": [
@@ -254,7 +153,7 @@
 			"entry_context": [],
 			"auto_complete_entities": false,
 			"variants": {
-				"en": {
+				"en-US": {
 					"utterances": [
 						{
 							"entities": [],
@@ -365,47 +264,7 @@
 			}
 		},
 		{
-			"intent_id": "agent",
-			"name": "Talk to an agent",
-			"entities": [],
-			"template_key": "Agent handover",
-			"reset_state": true,
-			"end_conversation": false,
-			"exit_context": [],
-			"entry_context": [],
-			"variants": {
-				"en": {
-					"utterances": [
-						{
-							"entities": [],
-							"utterance": "Can I talk to a human?"
-						},
-						{
-							"entities": [],
-							"utterance": "agent"
-						},
-						{
-							"entities": [],
-							"utterance": "human"
-						},
-						{
-							"entities": [],
-							"utterance": "Connect me to a human"
-						},
-						{
-							"entities": [],
-							"utterance": "Chat with agent"
-						},
-						{
-							"entities": [],
-							"utterance": "Can I speak with someone?"
-						}
-					]
-				}
-			}
-		},
-		{
-			"intent_id": "thank_you",
+			"intent_id": "3",
 			"name": "Thank you",
 			"entities": [],
 			"template_key": "Thank you",
@@ -413,8 +272,9 @@
 			"end_conversation": false,
 			"exit_context": [],
 			"entry_context": [],
+			"auto_complete_entities": false,
 			"variants": {
-				"en": {
+				"en-US": {
 					"utterances": [
 						{
 							"entities": [],
@@ -461,7 +321,7 @@
 			}
 		},
 		{
-			"intent_id": "not_helpful",
+			"intent_id": "4",
 			"name": "Not helpful",
 			"entities": [],
 			"template_key": "Not helpful",
@@ -469,8 +329,9 @@
 			"end_conversation": false,
 			"exit_context": [],
 			"entry_context": [],
+			"auto_complete_entities": false,
 			"variants": {
-				"en": {
+				"en-US": {
 					"utterances": [
 						{
 							"entities": [],
@@ -589,7 +450,7 @@
 			}
 		},
 		{
-			"intent_id": "greetings",
+			"intent_id": "5",
 			"name": "Greetings",
 			"entities": [],
 			"template_key": "Greetings",
@@ -597,8 +458,9 @@
 			"end_conversation": false,
 			"exit_context": [],
 			"entry_context": [],
+			"auto_complete_entities": false,
 			"variants": {
-				"en": {
+				"en-US": {
 					"utterances": [
 						{
 							"entities": [],
@@ -711,8 +573,150 @@
 			"entry_context": [],
 			"auto_complete_entities": false,
 			"variants": {
-				"en": {
+				"en-US": {
 					"utterances": []
+				}
+			}
+		},
+		{
+			"intent_id": "help",
+			"name": "Help",
+			"entities": [],
+			"template_key": "Fallback message",
+			"reset_state": true,
+			"end_conversation": false,
+			"exit_context": [],
+			"entry_context": [],
+			"auto_complete_entities": false,
+			"variants": {
+				"en-US": {
+					"utterances": [
+						{
+							"entities": [],
+							"utterance": "What can you do?"
+						},
+						{
+							"entities": [],
+							"utterance": "How can you help?"
+						},
+						{
+							"entities": [],
+							"utterance": "Help"
+						},
+						{
+							"entities": [],
+							"utterance": "What do you do?"
+						},
+						{
+							"entities": [],
+							"utterance": "Could you please help me"
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "9d56a8730d2545bc8e5b783c90b7d79c",
+							"utterance": "\"Can you explain what Better Bikes offers?\","
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "9d56a8730d2545bc8e5b783c90b7d79c",
+							"utterance": "\"I'm curious about the services provided by Better Bikes.\","
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "9d56a8730d2545bc8e5b783c90b7d79c",
+							"utterance": "\"What kind of assistance does Better Bikes provide?\","
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "9d56a8730d2545bc8e5b783c90b7d79c",
+							"utterance": "\"Tell me more about what Better Bikes is all about.\","
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "9d56a8730d2545bc8e5b783c90b7d79c",
+							"utterance": "\"What can I expect from Better Bikes in terms of services?\""
+						},
+						{
+							"entities": [],
+							"generated": false,
+							"utterance": "What does better bikes do"
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "93e18601a3d54af8b51189cf3b10148d",
+							"utterance": "\"Can you tell me what Better Bikes is all about?\""
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "93e18601a3d54af8b51189cf3b10148d",
+							"utterance": "\"I'm interested in learning more about the services Better Bikes provides.\""
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "94af5c97577e46d98d8d608792951998",
+							"utterance": "\"Could you provide me with some information about Better Bikes?\""
+						},
+						{
+							"entities": [],
+							"generated": true,
+							"transaction_id": "94af5c97577e46d98d8d608792951998",
+							"utterance": "\"I'm curious to learn more about what Better Bikes offers.\""
+						},
+						{
+							"entities": [],
+							"generated": false,
+							"utterance": "Can you tell me about"
+						}
+					]
+				}
+			}
+		},
+		{
+			"intent_id": "agent",
+			"name": "Talk to an agent",
+			"entities": [],
+			"template_key": "Agent handover",
+			"reset_state": true,
+			"end_conversation": false,
+			"exit_context": [],
+			"entry_context": [],
+			"auto_complete_entities": false,
+			"variants": {
+				"en-US": {
+					"utterances": [
+						{
+							"entities": [],
+							"utterance": "Can I talk to a human?"
+						},
+						{
+							"entities": [],
+							"utterance": "agent"
+						},
+						{
+							"entities": [],
+							"utterance": "human"
+						},
+						{
+							"entities": [],
+							"utterance": "Connect me to a human"
+						},
+						{
+							"entities": [],
+							"utterance": "Chat with agent"
+						},
+						{
+							"entities": [],
+							"utterance": "Can I speak with someone?"
+						}
+					]
 				}
 			}
 		}
@@ -720,7 +724,7 @@
 	"responses": {
 		"Agent handover": {
 			"variants": {
-				"en": {
+				"en-US": {
 					"logic": "",
 					"paths": {
 						"configurable": [],
@@ -744,7 +748,7 @@
 		},
 		"Entity suggestion": {
 			"variants": {
-				"en": {
+				"en-US": {
 					"logic": "",
 					"paths": {
 						"configurable": [],
@@ -768,7 +772,7 @@
 		},
 		"Fallback message": {
 			"variants": {
-				"en": {
+				"en-US": {
 					"logic": "",
 					"paths": {
 						"configurable": [],
@@ -792,7 +796,7 @@
 		},
 		"Goodbye": {
 			"variants": {
-				"en": {
+				"en-US": {
 					"logic": "",
 					"paths": {
 						"configurable": [],
@@ -816,7 +820,7 @@
 		},
 		"Greetings": {
 			"variants": {
-				"en": {
+				"en-US": {
 					"logic": "",
 					"paths": {
 						"configurable": [],
@@ -840,7 +844,7 @@
 		},
 		"Help message": {
 			"variants": {
-				"en": {
+				"en-US": {
 					"logic": "",
 					"paths": {
 						"configurable": [],
@@ -864,7 +868,7 @@
 		},
 		"Not helpful": {
 			"variants": {
-				"en": {
+				"en-US": {
 					"logic": "",
 					"paths": {
 						"configurable": [],
@@ -888,7 +892,7 @@
 		},
 		"Partial match": {
 			"variants": {
-				"en": {
+				"en-US": {
 					"logic": "",
 					"paths": {
 						"configurable": [],
@@ -912,7 +916,7 @@
 		},
 		"Response suggestion": {
 			"variants": {
-				"en": {
+				"en-US": {
 					"logic": "",
 					"paths": {
 						"configurable": [],
@@ -936,7 +940,7 @@
 		},
 		"Thank you": {
 			"variants": {
-				"en": {
+				"en-US": {
 					"logic": "",
 					"paths": {
 						"configurable": [],
@@ -960,7 +964,7 @@
 		},
 		"Welcome message": {
 			"variants": {
-				"en": {
+				"en-US": {
 					"logic": "",
 					"paths": {
 						"configurable": [],
@@ -984,7 +988,7 @@
 		},
 		"product_choice": {
 			"variants": {
-				"en": {
+				"en-US": {
 					"logic": "",
 					"paths": {
 						"configurable": [],
@@ -1077,7 +1081,7 @@
 		},
 		"purchase": {
 			"variants": {
-				"en": {
+				"en-US": {
 					"logic": "",
 					"paths": {
 						"configurable": [
@@ -1216,5 +1220,6 @@
 				}
 			}
 		}
-	}
+	},
+	"events": {}
 }
